@@ -1,0 +1,33 @@
+{% extends 'tpl.twig' %}
+{% block title %}{% endblock %}
+{% block content %}
+    <h3>Página Inicial do projeto Silex</h3>
+    <h4>Seja bem vindo,
+    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+        {{ username }}
+    {% else %}
+        Visitante!
+    {% endif %}</h4>
+    
+    <table class="table">
+        <tbody>
+        <tr>
+            <th>Data Criação</th><td>02-11-2016</td>
+        </tr>
+        <tr>
+            <th>Motivo da criação</th><td>Aprender Silex e SOA</td>
+        </tr>
+        <tr>
+            <th>Instituiçaõ de Ensino</th><td>Code Education</td>
+        </tr>
+        <tr>
+            <th>Instrutor</th><td>Wesley Wiliam</td>
+        </tr>
+        </tbody>
+    </table>
+<h4>Ir para</h4>
+<ul>
+    <li> </li>
+</ul>
+
+{% endblock %}

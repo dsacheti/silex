@@ -1,0 +1,10 @@
+{% extends 'tpl.twig' %}
+{% block title %}{% endblock %}
+{% block content %}
+    <h3>Muito obrigado, você colocou o post no sistema</h3>
+    
+    <h4>Ir para outra página<a href="{{ path('ola',{nome:'Carol'}) }}">Primeira</a></h4>
+    <p><a href="{{ path('ola') }}">Novo post</a> </p>
+
+
+{% endblock %}

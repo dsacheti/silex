@@ -1,0 +1,16 @@
+{% extends 'tpl.twig' %}
+{% block title %}
+    Lista de clientes
+
+{% endblock %}
+{% block content %}
+<h3>Lista de Clientes</h3>
+<ul>
+    {% for cliente in clientes %}
+        <li>
+            <strong>Nome: {{ cliente.nome }}</strong><br>
+            Email: {{ cliente.email }}
+        </li><br>
+    {% endfor %}
+</ul>
+{% endblock %}
