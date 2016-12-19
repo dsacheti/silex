@@ -71,9 +71,9 @@ $entityManager = EntityManager::create(
         'driver'  => 'pdo_mysql',
         'host'    => 'localhost',
         'port'    => '3306',
-        'user'    => 'homestead',
-        'password'  => 'secret',
-        'dbname'  => 'silex_bd',
+        'user'    => 'usuario',
+        'password'  => 'pass',
+        'dbname'  => 'banco',
     ),
     $config,
     $evm
